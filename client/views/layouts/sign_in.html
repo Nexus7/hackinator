@@ -1,3 +1,7 @@
 <template name="signInOrRegister">
-    {{>atForm}}
+    {{#if currentUser}}
+
+    {{else}}
+        {{>atForm}}
+    {{/if}}
 </template>

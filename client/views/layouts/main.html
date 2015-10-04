@@ -1,5 +1,32 @@
 <template name="mainLayout">
-    <div class="content">
-        {{>Template.dynamic template=content}}
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/">
+                       Hackinator
+                    </a>
+                </li>
+                <li>
+                    <a href="/hackers">Hackers</a>
+                </li>
+                <li>
+                    <a href="/teams">Teams</a>
+                </li>
+            </ul>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                {{#if currentUser}}
+                    {{>Template.dynamic template=content}}
+                {{else}}
+                    {{#if loggingIn}}
+                        <p>User Logging in...</p>
+                    {{else}}
+                        {{> atForm}}
+                    {{/if}}
+                {{/if}}
+            </div>
+        </div>
     </div>
 </template>
