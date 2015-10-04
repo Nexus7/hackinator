@@ -1,0 +1,5 @@
+{
+    "env": "dev",
+    "host_machine": "localhost",
+    "host_port": 3000
+}

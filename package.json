@@ -1,0 +1,10 @@
+{
+    "name": "hackinator",
+    "version": "0.0.1",
+    "description": "An application to help create teams for hackathons",
+    "scripts": {
+        "start": "meteor --settings settings-dev.json",
+        "qa": "meteor --settings settings-qa.json",
+        "prod": "meteor --settings settings-prod.json"
+    }
+}
