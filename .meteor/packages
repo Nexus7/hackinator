@@ -27,5 +27,9 @@ spacebars
 reactive-var
 twbs:bootstrap
 accounts-ui
-materialize:materialize
 useraccounts:materialize
+materialize:materialize@=0.97.0
+gildaspk:autoform-materialize
+aldeed:simple-schema
+aldeed:collection2
+ongoworks:security
